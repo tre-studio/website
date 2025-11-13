@@ -7,6 +7,9 @@ const config = {
     // for more information about preprocessors
     preprocess: vitePreprocess(),
     kit: { adapter: adapter() },
+    compilerOptions: {
+        cssHash: () => ``,
+    },
 };
 
 export default config;
