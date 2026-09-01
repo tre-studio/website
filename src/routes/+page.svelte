@@ -41,7 +41,7 @@ d88(  "8   888   `888  `888  d88' `888  `888  d88' `88b
 o.  )88b   888 .  888   888  888   888   888  888   888
 8""888P'   "888"  `V88V"V8P' `Y8bod88P" o888o `Y8bod8P'</pre>
 
-    <p>Comming soon. Built with <span style:color="#e67e80">{"<3"}</span></p>
+    <p>Comming soon. Built with&nbsp;<span style:color="#e67e80">{"<3"}</span></p>
 </div>
 
 <div class="w2">
@@ -54,7 +54,7 @@ o.  )88b   888 .  888   888  888   888   888  888   888
         display: inline-block;
 
         &:first-child {
-            margin-right: 1em;
+            margin-right: 1.5em;
         }
     }
 
