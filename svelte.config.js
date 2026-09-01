@@ -8,7 +8,7 @@ const config = {
     preprocess: vitePreprocess(),
     kit: { adapter: adapter() },
     compilerOptions: {
-        cssHash: () => ``,
+        cssHash: ({ hash, css }) => `t${hash(css).substring(1, 2)}`,
     },
 };
 
