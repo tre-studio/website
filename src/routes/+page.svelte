@@ -2,7 +2,7 @@
     // https://www.asciiart.eu/art/eee44c71a6f6a4a5
     const bike = `
       __o
-    _ \<_
+    _ \\<_
 ...(*)/(*)
 `
         .trimEnd()
