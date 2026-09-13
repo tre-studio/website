@@ -156,7 +156,10 @@ ${"`"}---'
 
     div {
         /* 100% -  size of header + footer */
-        min-height: calc(100% - 184px );
+        min-height: calc(100% - 184px);
+        max-width: 1092px;
+        margin: auto;
+        padding: 0 2em;
     }
 
     footer {

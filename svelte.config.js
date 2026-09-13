@@ -8,9 +8,9 @@ const config = {
     preprocess: vitePreprocess(),
     kit: {
         adapter: adapter(),
-        paths: {
-            base: process.env.NODE_ENV === "production" ? process.env.BASE_PATH : "",
-        },
+        // paths: {
+        //     base: process.env.NODE_ENV === "production" ? process.env.BASE_PATH : "",
+        // },
     },
     compilerOptions: {
         cssHash: ({ hash, css }) => `t${hash(css)}`,
