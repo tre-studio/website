@@ -1,4 +1,6 @@
 <script lang="ts">
+    let { children } = $props();
+
     // https://www.asciiart.eu/art/eee44c71a6f6a4a5
     const bike = `
       __o
@@ -19,90 +21,65 @@ ${"`"}---'
         .substring(1);
 </script>
 
-<svelte:head>
-    <title>Tre Studio</title>
-</svelte:head>
-
-<div class="c">
-    <!-- font: Small Braille -->
-    <a href="contact">
-        <pre>
-⢀⣀ ⢀⡀ ⣀⡀ ⣰⡀ ⢀⣀ ⢀⣀ ⣰⡀
-⠣⠤ ⠣⠜ ⠇⠸ ⠘⠤ ⠣⠼ ⠣⠤ ⠘⠤</pre>
-    </a>
-    <a href="about">
-        <pre>
-⢀⣀ ⣇⡀ ⢀⡀ ⡀⢀ ⣰⡀
-⠣⠼ ⠧⠜ ⠣⠜ ⠣⠼ ⠘⠤</pre>
-    </a>
+<header>
     <a href="/">
         <pre>
+⣰⡀
+⠘⠤</pre>
+        <pre>
+⡀⣀
+⠏</pre>
+        <pre>
+⢀⡀   ⢀⣀ ⣰⡀ ⡀⢀ ⢀⣸ ⠄ ⢀⡀
+⠣⠭   ⠭⠕ ⠘⠤ ⠣⠼ ⠣⠼ ⠇ ⠣⠜</pre>
+    </a>
+    <nav>
+        <a href="/">
+            <pre>
 ⣇⡀ ⢀⡀ ⣀⣀  ⢀⡀
 ⠇⠸ ⠣⠜ ⠇⠇⠇ ⠣⠭</pre>
-    </a>
-</div>
-<div class="w">
-    <!-- font: roman -->
-    <!-- https://patorjk.com/software/taag/#p=display&f=Roman -->
-    <pre class="ts">
-    .
-  .o8
-.o888oo oooo d8b  .ooooo.
-  888   `888""8P d88' `88b
-  888    888     888ooo888
-  888 .  888     888    .o
-  "888" d888b    `Y8bod8P'</pre>
-    <pre class="ts">
-             .                     .o8   o8o
-           .o8                    "888   `"'
- .oooo.o .o888oo oooo  oooo   .oooo888  oooo   .ooooo.
-d88(  "8   888   `888  `888  d88' `888  `888  d88' `88b
-`"Y88b.    888    888   888  888   888   888  888   888
-o.  )88b   888 .  888   888  888   888   888  888   888
-8""888P'   "888"  `V88V"V8P' `Y8bod88P" o888o `Y8bod8P'</pre>
+        </a><a href="about">
+            <pre>
+⢀⣀ ⣇⡀ ⢀⡀ ⡀⢀ ⣰⡀
+⠣⠼ ⠧⠜ ⠣⠜ ⠣⠼ ⠘⠤</pre>
+        </a><a href="contact">
+            <pre>
+⢀⣀ ⢀⡀ ⣀⡀ ⣰⡀ ⢀⣀ ⢀⣀ ⣰⡀
+⠣⠤ ⠣⠜ ⠇⠸ ⠘⠤ ⠣⠼ ⠣⠤ ⠘⠤</pre>
+        </a>
+    </nav>
+</header>
 
-    <p>Coming soon. Made with&nbsp;<span style:color="#e67e80">{"<3"}</span></p>
+<div>
+    {@render children?.()}
 </div>
 
-<div class="w2">
+<footer>
     <pre>{bike}</pre>
+    <p>Made with&nbsp;<span>{"<3"}</span></p>
     <pre>{game_console}</pre>
-</div>
+</footer>
 
 <style>
-    .ts {
+    header > * {
         display: inline-block;
+    }
 
-        &:first-child {
-            margin-right: 1.5em;
+    header > a {
+        padding: 1em;
+        padding-top: 2em;
+        padding-left: 2em;
+
+        > pre {
+            display: inline-block;
         }
     }
 
-    p {
-        margin-top: 1em;
-        margin-left: 0.5em;
-        font-size: 1.25em;
-    }
+    nav {
+        float: right;
 
-    .w {
-        width: fit-content;
-        max-width: calc(100% - 2em);
-        margin: auto;
-        transform: translateY(-50%);
-    }
-
-    .c {
-        height: 50%;
-
-        > a {
-            float: right;
-
-            &:first-child {
-                pre {
-                    margin-right: 1em;
-                }
-            }
-
+        > * {
+            display: inline-block;
             > pre {
                 position: relative;
                 padding: 1em;
@@ -168,29 +145,31 @@ o.  )88b   888 .  888   888  888   888   888  888   888
                     }
                 }
             }
+
+            &:last-child {
+                pre {
+                    margin-right: 1em;
+                }
+            }
         }
     }
 
-    .w2 {
-        position: absolute;
-        bottom: 2em;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        max-width: calc(100% - 4em);
+    div {
+        /* 100% -  size of header + footer */
+        min-height: calc(100% - 184px );
+    }
+
+    footer {
+        padding: 2em;
+        padding-top: 0;
+        padding-bottom: 2em;
+        font-size: 1.25em;
         display: flex;
         align-items: end;
         justify-content: space-between;
-        font-size: 1.25em;
-    }
 
-    @media only screen and (max-width: 600px) {
-        .ts:first-child {
-            margin: 0;
-        }
-
-        p {
-            margin-left: 0;
+        > p > span {
+            color: #e67e80;
         }
     }
 </style>

@@ -12,14 +12,6 @@
 {@render children?.()}
 
 <style>
-    /* :global(body) {
-        height: 100lvh;
-    } */
-
-    /* :global(.global-config) {
-        --timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-        --full-page-height: 100lvh;
-    } */
     :global(*) {
         margin: 0;
     }

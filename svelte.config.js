@@ -13,7 +13,7 @@ const config = {
         },
     },
     compilerOptions: {
-        cssHash: ({ hash, css }) => `t${hash(css).substring(1, 1)}`,
+        cssHash: ({ hash, css }) => `t${hash(css)}`,
     },
 };
 
