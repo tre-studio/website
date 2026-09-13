@@ -24,20 +24,21 @@ ${"`"}---'
 <header>
     <a href="/">
         <pre>
-⣰⡀
-⠘⠤</pre>
-        <pre>
-⡀⣀
-⠏</pre>
-        <pre>
+⣰⡀ ⡀⣀
+⠘⠤ ⠏</pre>
+        <pre class="patch">
 ⢀⡀   ⢀⣀ ⣰⡀ ⡀⢀ ⢀⣸ ⠄ ⢀⡀
 ⠣⠭   ⠭⠕ ⠘⠤ ⠣⠼ ⠣⠼ ⠇ ⠣⠜</pre>
     </a>
     <nav>
         <a href="/">
             <pre>
-⣇⡀ ⢀⡀ ⣀⣀  ⢀⡀
-⠇⠸ ⠣⠜ ⠇⠇⠇ ⠣⠭</pre>
+⣇⡀ ⢀⡀ ⣀⣀
+⠇⠸ ⠣⠜ ⠇⠇⠇</pre>
+            <pre class="patch">
+⢀⡀
+⠣⠭
+</pre>
         </a><a href="about">
             <pre>
 ⢀⣀ ⣇⡀ ⢀⡀ ⡀⢀ ⣰⡀
@@ -80,76 +81,76 @@ ${"`"}---'
 
         > * {
             display: inline-block;
-            > pre {
-                position: relative;
-                padding: 1em;
-                padding-top: 2em;
+            position: relative;
+            padding: 1em;
+            padding-top: 2em;
 
-                &:before {
-                    position: absolute;
-                    content: "";
-                    bottom: 0.25em;
-                    border-bottom: 0.1875em dotted #a5a5a5;
-                    animation: b 0.3s steps(3) forwards;
-                }
+            &:before {
+                position: absolute;
+                content: "";
+                bottom: 0.25em;
+                border-bottom: 0.1875em dotted #a5a5a5;
+                animation: b 0.3s steps(3) forwards;
+            }
 
-                &:after {
-                    position: absolute;
-                    content: "";
-                    bottom: 0.25em;
-                    left: 0;
-                    width: 100%;
-                    height: 1em;
-                    background-color: #1f1f1f;
-                    animation: hidden 0.3s steps(1) forwards;
-                }
+            &:after {
+                position: absolute;
+                content: "";
+                bottom: 0.25em;
+                left: 0;
+                width: 100%;
+                height: 1em;
+                background-color: #1f1f1f;
+                animation: hidden 0.3s steps(1) forwards;
+            }
 
-                @media (hover: hover) {
-                    &:hover {
-                        &:before {
-                            animation: a 0.3s steps(3) forwards;
-                        }
-                    }
-                }
-
-                @keyframes hidden {
-                    0% {
-                        opacity: 1;
-                    }
-                    100% {
-                        opacity: 0;
-                    }
-                }
-
-                @keyframes a {
-                    0% {
-                        left: 1.25em;
-                        right: 100%;
-                    }
-
-                    100% {
-                        left: 1.25em;
-                        right: 1.25em;
-                    }
-                }
-
-                @keyframes b {
-                    0% {
-                        left: 1.25em;
-                        right: 1.25em;
-                    }
-
-                    100% {
-                        left: 100%;
-                        right: 1.25em;
+            @media (hover: hover) {
+                &:hover {
+                    &:before {
+                        animation: a 0.3s steps(3) forwards;
                     }
                 }
             }
 
-            &:last-child {
-                pre {
-                    margin-right: 1em;
+            @keyframes hidden {
+                0% {
+                    opacity: 1;
                 }
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            @keyframes a {
+                0% {
+                    left: 1.25em;
+                    right: 100%;
+                }
+
+                100% {
+                    left: 1.25em;
+                    right: 1.25em;
+                }
+            }
+
+            @keyframes b {
+                0% {
+                    left: 1.25em;
+                    right: 1.25em;
+                }
+
+                100% {
+                    left: 100%;
+                    right: 1.25em;
+                }
+            }
+
+            &:last-child {
+                margin-right: 1em;
+            }
+
+            > pre {
+                display: inline-block;
             }
         }
     }
@@ -174,5 +175,9 @@ ${"`"}---'
         > p > span {
             color: #e67e80;
         }
+    }
+
+    pre.patch {
+        padding-left: 0.25em;
     }
 </style>

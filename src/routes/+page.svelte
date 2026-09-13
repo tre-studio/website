@@ -37,8 +37,11 @@ ${"`"}---'
     </a>
     <a href="/">
         <pre>
-⣇⡀ ⢀⡀ ⣀⣀  ⢀⡀
-⠇⠸ ⠣⠜ ⠇⠇⠇ ⠣⠭</pre>
+⣇⡀ ⢀⡀ ⣀⣀
+⠇⠸ ⠣⠜ ⠇⠇⠇</pre>
+        <pre class="patch">
+⢀⡀
+⠣⠭</pre>
     </a>
 </div>
 <div class="w">
@@ -98,74 +101,74 @@ o.  )88b   888 .  888   888  888   888   888  888   888
             float: right;
 
             &:first-child {
-                pre {
-                    margin-right: 1em;
-                }
+                margin-right: 1em;
             }
 
             > pre {
-                position: relative;
-                padding: 1em;
-                padding-top: 2em;
+                display: inline-block;
+            }
 
-                &:before {
-                    position: absolute;
-                    content: "";
-                    bottom: 0.25em;
-                    border-bottom: 0.1875em dotted #a5a5a5;
-                    animation: b 0.3s steps(3) forwards;
-                }
+            position: relative;
+            padding: 1em;
+            padding-top: 2em;
 
-                &:after {
-                    position: absolute;
-                    content: "";
-                    bottom: 0.25em;
-                    left: 0;
-                    width: 100%;
-                    height: 1em;
-                    background-color: #1f1f1f;
-                    animation: hidden 0.3s steps(1) forwards;
-                }
+            &:before {
+                position: absolute;
+                content: "";
+                bottom: 0.25em;
+                border-bottom: 0.1875em dotted #a5a5a5;
+                animation: b 0.3s steps(3) forwards;
+            }
 
-                @media (hover: hover) {
-                    &:hover {
-                        &:before {
-                            animation: a 0.3s steps(3) forwards;
-                        }
+            &:after {
+                position: absolute;
+                content: "";
+                bottom: 0.25em;
+                left: 0;
+                width: 100%;
+                height: 1em;
+                background-color: #1f1f1f;
+                animation: hidden 0.3s steps(1) forwards;
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    &:before {
+                        animation: a 0.3s steps(3) forwards;
                     }
                 }
+            }
 
-                @keyframes hidden {
-                    0% {
-                        opacity: 1;
-                    }
-                    100% {
-                        opacity: 0;
-                    }
+            @keyframes hidden {
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            @keyframes a {
+                0% {
+                    left: 1.25em;
+                    right: 100%;
                 }
 
-                @keyframes a {
-                    0% {
-                        left: 1.25em;
-                        right: 100%;
-                    }
+                100% {
+                    left: 1.25em;
+                    right: 1.25em;
+                }
+            }
 
-                    100% {
-                        left: 1.25em;
-                        right: 1.25em;
-                    }
+            @keyframes b {
+                0% {
+                    left: 1.25em;
+                    right: 1.25em;
                 }
 
-                @keyframes b {
-                    0% {
-                        left: 1.25em;
-                        right: 1.25em;
-                    }
-
-                    100% {
-                        left: 100%;
-                        right: 1.25em;
-                    }
+                100% {
+                    left: 100%;
+                    right: 1.25em;
                 }
             }
         }
@@ -182,6 +185,10 @@ o.  )88b   888 .  888   888  888   888   888  888   888
         align-items: end;
         justify-content: space-between;
         font-size: 1.25em;
+    }
+
+    pre.patch {
+        padding-left: 0.25em;
     }
 
     @media only screen and (max-width: 600px) {
