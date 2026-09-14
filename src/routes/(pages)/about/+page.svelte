@@ -18,7 +18,7 @@
 <h2>Our Team</h2>
 <img class="avatar" src="images/a1.png" alt="Tony Nguyen" />
 <h3>Tony Nguyen</h3>
-<p>Founder, Creative Director</p>
+<p>Founder, Chief Executive Officer</p>
 
 <h2>Our cultures</h2>
 <ul>

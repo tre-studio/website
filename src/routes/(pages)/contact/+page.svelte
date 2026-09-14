@@ -29,7 +29,12 @@
 
 <p>Or alternatively, you can contact us through:</p>
 <div class="social">
-    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" title="Youtube">
+    <a
+        href="https://www.youtube.com/@trestudiohq"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="trestudiohq@Youtube"
+    >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 803 688">
             <path
                 fill="#f03"
@@ -51,10 +56,10 @@
         </svg>
     </a>
     <a
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/trestudiohq"
         target="_blank"
         rel="noopener noreferrer"
-        title="Instagram"
+        title="trestudiohq@Instagram"
         id="ins"
     >
         <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 1000 1000">
@@ -64,7 +69,13 @@
             />
         </svg>
     </a>
-    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" title="X" id="x">
+    <a
+        href="https://x.com/TreStudioHQ"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="TreStudioHQ@X"
+        id="x"
+    >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1200 1227"
             ><path
                 fill="#fff"
@@ -73,10 +84,10 @@
         </svg>
     </a>
     <a
-        href="https://www.linkedin.com/"
+        href="https://www.linkedin.com/company/trestudiohq"
         target="_blank"
         rel="noopener noreferrer"
-        title="Linkedin"
+        title="trestudiohq@Linkedin"
         id="li"
     >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"
