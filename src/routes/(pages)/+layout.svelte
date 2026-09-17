@@ -39,6 +39,10 @@ ${"`"}---'
 ⢀⡀
 ⠣⠭
 </pre>
+        </a><a href="#games">
+            <pre>
+⢀⡀ ⢀⣀ ⣀⣀  ⢀⡀ ⢀⣀
+⣑⡺ ⠣⠼ ⠇⠇⠇ ⠣⠭ ⠭⠕</pre>
         </a><a href="about">
             <pre>
 ⢀⣀ ⣇⡀ ⢀⡀ ⡀⢀ ⣰⡀
@@ -99,7 +103,7 @@ ${"`"}---'
                 bottom: 0.25em;
                 left: 0;
                 width: 100%;
-                height: 1em;
+                height: 0.75em;
                 background-color: #1f1f1f;
                 animation: hidden 0.3s steps(1) forwards;
             }

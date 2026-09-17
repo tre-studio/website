@@ -139,6 +139,12 @@
             margin-top: 2em;
             min-width: fit-content !important;
             cursor: pointer;
+            transition: 0.3s steps(2);
+
+            &:hover {
+                background-color: #a5a5a5;
+                color: #1f1f1f;
+            }
         }
 
         textarea {
