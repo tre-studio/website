@@ -4,13 +4,13 @@
 
 <h1>
     <pre>
-     88                                     .                           .
-    .8'                                   .o8                         .o8
-   .8'   .ooooo.   .ooooo.  ooo. .oo.   .o888oo  .oooo.    .ooooo.  .o888oo
-  .8'   d88' `"Y8 d88' `88b `888P"Y88b    888   `P  )88b  d88' `"Y8   888
- .8'    888       888   888  888   888    888    .oP"888  888         888
-.8'     888   .o8 888   888  888   888    888 . d8(  888  888   .o8   888 .
-88      `Y8bod8P' `Y8bod8P' o888o o888o   "888" `Y888""8o `Y8bod8P'   "888"</pre>
+                                    .                           .
+                                  .o8                         .o8
+ .ooooo.   .ooooo.  ooo. .oo.   .o888oo  .oooo.    .ooooo.  .o888oo
+d88' `"Y8 d88' `88b `888P"Y88b    888   `P  )88b  d88' `"Y8   888
+888       888   888  888   888    888    .oP"888  888         888
+888   .o8 888   888  888   888    888 . d8(  888  888   .o8   888 .
+`Y8bod8P' `Y8bod8P' o888o o888o   "888" `Y888""8o `Y8bod8P'   "888"</pre>
 </h1>
 
 <p class="intro">Have something to tell us?</p>

@@ -4,13 +4,13 @@
 
 <h1>
     <pre>
-     88            .o8                                 .
-    .8'           "888                               .o8
-   .8'   .oooo.    888oooo.   .ooooo.  oooo  oooo  .o888oo
-  .8'   `P  )88b   d88' `88b d88' `88b `888  `888    888
- .8'     .oP"888   888   888 888   888  888   888    888
-.8'     d8(  888   888   888 888   888  888   888    888 .
-88      `Y888""8o  `Y8bod8P' `Y8bod8P'  `V88V"V8P'   "888"</pre>
+           .o8                                 .
+          "888                               .o8
+ .oooo.    888oooo.   .ooooo.  oooo  oooo  .o888oo
+`P  )88b   d88' `88b d88' `88b `888  `888    888
+ .oP"888   888   888 888   888  888   888    888
+d8(  888   888   888 888   888  888   888    888 .
+`Y888""8o  `Y8bod8P' `Y8bod8P'  `V88V"V8P'   "888"</pre>
 </h1>
 
 <p class="intro">About who we are, our team, cultures and more.</p>
