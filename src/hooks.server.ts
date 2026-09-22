@@ -1,20 +1,16 @@
-import { minify } from "html-minifier-terser";
+import { minify, presets } from "html-minifier-next";
 import { dev } from "$app/environment";
-
-const minification_options = {
-    collapseWhitespace: true,
-    collapseInlineTagWhitespace: true,
-    removeComments: true,
-    minifyCSS: true,
-    minifyJS: true,
-};
 
 export async function handle({ event, resolve }) {
     let response = resolve(event);
 
     if (!dev) {
         response = await resolve(event, {
-            transformPageChunk: ({ html }) => minify(html, minification_options),
+            transformPageChunk: ({ html }) =>
+                minify(html, {
+                    ...presets.comprehensive,
+                    removeOptionalTags: false,
+                }),
         });
     }
 

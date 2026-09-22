@@ -54,9 +54,49 @@ d8(  888   888   888 888   888  888   888    888 .
 </ul>
 
 <h2>Our Team</h2>
-<img class="avatar" src="images/a1.png" alt="Tony Nguyen" />
-<h3>Tony Nguyen</h3>
-<p>Founder, Chief Executive Officer</p>
+
+<input type="checkbox" id="tony-intro" class="hidden pop" />
+<label for="tony-intro" class="pop-intro">
+    <img class="avatar" src="images/a1.png" alt="Tony Nguyen" />
+    <h3 class="member-name">Tony Nguyen</h3>
+    <p>Founder, Chief Executive Officer</p>
+</label>
+
+<div class="tony-text pop-text">
+    <h4 class="pop-text-heading">Hi, I'm Tony.</h4>
+    <br />
+    <p class="multiline">
+        I'm a gameplay programmer and designer focused on building interactive virtual worlds.
+    </p>
+    <br />
+    <p class="multiline">
+        My strongest skills are programming, game design, and project management, with experience in
+        Unreal Engine and C++.
+    </p>
+    <br />
+    <p class="multiline">
+        As a cofounder, I bring technical excellence and ambitious strategic planning to the team.
+        I'm especially interested in solving problems related to gameplay, production, and the
+        business side of game development, whether that involves marketing, legal matters, or
+        administration.
+    </p>
+    <br />
+    <p class="multiline">
+        I'm currently developing my own project, Amicus, with the goal of building an audience for
+        my future game studio.
+    </p>
+    <br />
+    <p class="multiline">
+        What makes me valuable to a team is the combination of strategic planning and strong
+        technical execution. I also have experience in simulation research and the automotive
+        industry.
+    </p>
+    <br />
+    <p class="multiline">
+        My goal isn't to know everything. It's to learn quickly, solve problems, and help the team
+        turn an idea into something players actually want to play.
+    </p>
+</div>
 
 <h2>Our Location</h2>
 <p>Tre Studio</p>
@@ -129,5 +169,49 @@ d8(  888   888   888 888   888  888   888    888 .
 
     p.m1 {
         margin-top: 1em;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .pop-intro {
+        cursor: pointer;
+        display: block;
+        user-select: none;
+    }
+
+    h3.member-name {
+        text-decoration: wavy underline #727272;
+        transition: 0.3s steps(2);
+
+        &:hover {
+            text-decoration-color: initial;
+        }
+    }
+
+    .pop-text {
+        margin-top: 2em;
+        overflow: hidden;
+        height: 0;
+        padding: 0 2em;
+        border: 0px solid #727272;
+        transition: 0.3s steps(3);
+
+        > .pop-text-heading {
+            font-size: 2em;
+        }
+    }
+
+    .pop:checked ~ .pop-text {
+        padding: 2em;
+        height: initial;
+        border: 1px solid #727272;
+    }
+
+    .pop:checked ~ .pop-intro {
+        > .member-name {
+            text-decoration: none;
+        }
     }
 </style>
