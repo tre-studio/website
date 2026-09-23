@@ -58,7 +58,7 @@ d8(  888   888   888 888   888  888   888    888 .
 <input type="checkbox" id="tony-intro" class="hidden pop" />
 <label for="tony-intro" class="pop-intro">
     <img class="avatar" src="images/a1.png" alt="Tony Nguyen" />
-    <h3 class="member-name">Tony Nguyen</h3>
+    <h3>Tony Nguyen</h3>
     <p>Founder, Chief Executive Officer</p>
 </label>
 
@@ -181,15 +181,6 @@ d8(  888   888   888 888   888  888   888    888 .
         user-select: none;
     }
 
-    h3.member-name {
-        text-decoration: wavy underline #727272;
-        transition: 0.3s steps(2);
-
-        &:hover {
-            text-decoration-color: initial;
-        }
-    }
-
     .pop-text {
         margin-top: 2em;
         overflow: hidden;
@@ -207,11 +198,5 @@ d8(  888   888   888 888   888  888   888    888 .
         padding: 2em;
         height: initial;
         border: 1px solid #727272;
-    }
-
-    .pop:checked ~ .pop-intro {
-        > .member-name {
-            text-decoration: none;
-        }
     }
 </style>
